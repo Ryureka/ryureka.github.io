@@ -1,6 +1,6 @@
 ---
 layout: til
 title: TIL
-excerpt: "A List of Jekyll TIL Posts"
+excerpt: "A List of TIL Posts"
 comments: false
 ---
