@@ -12,6 +12,7 @@
       if (results.length >= 2) {
         results.sort(
           function(a, b) {
+            if(a.title.match(/(\d+)/g) == null || b.title.match(/(\d+)/g) == null) return;
             const aNumArrLen=a.title.match(/(\d+)/g).length;
             const bNumArrLen=b.title.match(/(\d+)/g).length;
             let numArrLen=0;

@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: BFS
-excerpt: "A List of BFS Posts"
+title: BOJ
+excerpt: "A List of BOJ Posts"
 comments: false
 ---
