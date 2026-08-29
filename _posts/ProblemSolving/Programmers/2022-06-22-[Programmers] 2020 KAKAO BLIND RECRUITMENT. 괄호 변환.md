@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "[Programmers] 괄호 변환"
+title:  "[Programmers] 2020 KAKAO BLIND RECRUITMENT. 괄호 변환"
 date:   2022-06-22
-excerpt: "히스토그램 문제의 다양한 접근방식 및 풀이"
+excerpt: "[Programmers] 2020 KAKAO BLIND RECRUITMENT. 괄호 변환 문제의 풀이"
 category: Programmers
 problemsolving: true
 posts: true

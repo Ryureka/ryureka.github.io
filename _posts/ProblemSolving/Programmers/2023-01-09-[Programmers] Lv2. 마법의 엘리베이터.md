@@ -2,7 +2,7 @@
 layout: post
 title:  "[Programmers] Lv2. 마법의 엘리베이터"
 date:   2023-01-09
-excerpt: "히스토그램 문제의 다양한 접근방식 및 풀이"
+excerpt: "[Programmers] Lv2. 마법의 엘리베이터 문제의 풀이"
 category: Programmers
 problemsolving: true
 posts: true

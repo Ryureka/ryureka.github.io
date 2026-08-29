@@ -2,7 +2,7 @@
 layout: post
 title:  "[Programmers] Lv2. 택배 배달과 수거하기"
 date:   2023-01-08
-excerpt: "히스토그램 문제의 다양한 접근방식 및 풀이"
+excerpt: "[Programmers] Lv2. 택배 배달과 수거하기 문제의 풀이"
 category: Programmers
 problemsolving: true
 posts: true
