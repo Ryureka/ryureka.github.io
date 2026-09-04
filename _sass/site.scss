@@ -11,6 +11,7 @@
 html {
 	@extend %extend1;
 }
+
 body {
 	@extend %extend1;
 	font-family: $font1;
@@ -19,20 +20,40 @@ body {
 	background-color: $bodycolor;
 	background-position: center center;
 	background-attachment: fixed;
+
 	@media #{$small} {
-	    background-image: none !important;
+		background-image: none !important;
 		background: $white;
 	}
+
+	@media #{$medium} {
+		background-image: none !important;
+		background: $white;
+	}
+
+	@media #{$large} {
+		background-image: none !important;
+		background: $comp-color;
+	}
+
+	@media #{$xlarge} {
+		background-image: none !important;
+		background: $comp-color;
+	}
 }
+
 * {
 	box-sizing: border-box;
 }
+
 *::after {
 	box-sizing: border-box;
 }
+
 *::before {
 	box-sizing: border-box;
 }
+
 .header {
 	height: 100%;
 	position: relative;
@@ -40,15 +61,18 @@ body {
 	min-height: 300px;
 	text-align: left;
 	color: $white;
+
 	@media #{$small} {
 		display: block !important;
 		// 아이폰에서 바깥 영역 클릭시 dlmenu 닫기 클릭 이벤트 문제 해결
 		cursor: pointer;
 	}
+
 	@media only screen and (max-height: 500px) {
-	    display: block !important;
+		display: block !important;
 	}
 }
+
 .flex {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -71,6 +95,7 @@ body {
 	-ms-flex-align: center;
 	align-items: center;
 }
+
 .container {
 	width: 36rem;
 	max-width: 550px;
@@ -81,27 +106,29 @@ body {
 	color: $color_shark;
 	z-index: 1;
 	border-radius: 3px;
-	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	box-shadow: 0 0 10px 0 rgba($color_shark, 0.3);
 	@include transition(.5s);
+
 	@media #{$small} {
 		width: 100%;
-	    box-shadow: none;
-	}
-	@media #{$medium} {
-		width: 80%;
+		box-shadow: none;
 	}
 }
+
 .row {
 	margin-top: 15px;
 	text-align: center;
+
 	.title {
-	    margin-top: 0;
-	    margin-bottom: 5px;
+		margin-top: 0;
+		margin-bottom: 5px;
 	}
+
 	@media #{$small} {
 		padding: 0 1em;
 	}
 }
+
 .wrapper {
 	width: 75%;
 	max-width: 850px;
@@ -110,43 +137,46 @@ body {
 	color: $color_tuatara;
 	padding: 2em;
 	border-radius: 3px;
-	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	box-shadow: 0 0 10px 0 rgba($color_shark, 0.3);
 	@include transition(.5s);
+
 	@media #{$small} {
-		max-width:100vw;
+		max-width: 100vw;
 		margin: 0 0;
 		width: 100%;
 		padding: 2em 0;
 		box-shadow: none;
 	}
+
 	@media #{$medium} {
-		max-width:100vw;
+		max-width: 100vw;
 		width: 100%;
 		padding: 2em 0;
 		box-shadow: none;
 		margin: 0 0;
 		border-radius: 0px;
 	}
+
 	@media only screen and (min-width: 48.1em) and (max-width: 64em) {
 		max-width: 90vw;
-		width:100%;
+		width: 100%;
 		padding: 2em 2em;
 		box-shadow: none;
 		border-radius: 0px;
 	}
 }
 
-.wide_wrapper{
+.wide_wrapper {
 	@media only screen and (min-width: 48.1em) and (max-width: 64em) {
-		max-width : 100vw!important;
-		margin : 0 0!important;
+		max-width: 100vw !important;
+		margin: 0 0 !important;
 	}
 }
 
-.wide_disqus_area{
+.wide_disqus_area {
 	@media only screen and (min-width: 48.1em) and (max-width: 64em) {
-		max-width : 100vw!important;
-		margin : 0 0!important;
+		max-width: 100vw !important;
+		margin: 0 0 !important;
 	}
 }
 
@@ -158,13 +188,15 @@ body {
 	color: $color_tuatara;
 	padding: 2em;
 	border-radius: 3px;
-	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	box-shadow: 0 0 10px 0 rgba($color_shark, 0.3);
 	@include transition(.5s);
+
 	@media #{$small} {
 		width: 90%;
 		padding: 2em 0;
-	    box-shadow: none;
+		box-shadow: none;
 	}
+
 	@media #{$medium} {
 		width: 100%;
 		padding: 2em 2em;
@@ -172,8 +204,9 @@ body {
 		margin: 0 0;
 		border-radius: 0px;
 	}
-	@media only screen and (min-width: 48.1em) and (max-width: 64em){
-		max-width:90vw;
+
+	@media only screen and (min-width: 48.1em) and (max-width: 64em) {
+		max-width: 90vw;
 		width: 100%;
 		padding: 2em 2em;
 		box-shadow: none;
@@ -181,86 +214,99 @@ body {
 		border-radius: 0px;
 	}
 }
+
 // entry meta
 .entry-meta {
 	@include font-rem(12);
 	text-transform: uppercase;
-	color: lighten($color_tuatara,60);
+	color: lighten($color_tuatara, 60);
 	padding-left: 0;
+
 	a {
-		color: lighten($color_tuatara,60);
+		color: lighten($color_tuatara, 60);
 	}
+
 	li {
-	    list-style-type: none;
-	    display: inline;
+		list-style-type: none;
+		display: inline;
 	}
+
 	.tag {
-	    display: inline-block;
-        border: 1px solid;
-        border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka;
-        @include rounded(3px);
-        text-decoration: none;
-        background-color: $white;
-        color: $color_tuatara;
-        @include transition(.75s);
-        margin: 2px 5px;
+		display: inline-block;
+		border: 1px solid;
+		border-color: rgba($color_mercury, 0.5) rgba($color_bon_jour, 0.5) $color_mischka;
+		@include rounded(3px);
+		text-decoration: none;
+		background-color: $white;
+		color: $color_tuatara;
+		@include transition(.75s);
+		margin: 2px 5px;
+
 		span {
 			float: left;
 			padding: 2px 6px;
 		}
+
 		.count {
-			background-color: darken($white,15);
-			@include border-radius(3px,3px,0,0);
+			background-color: darken($white, 15);
+			@include border-radius(3px, 3px, 0, 0);
 		}
+
 		&:hover {
-			background-color: darken($white,15);
-			box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
+			background-color: darken($white, 15);
+			box-shadow: 0 0 1px 0 rgba($color_shark, 0.5);
 		}
 	}
 }
 
 .entry-title a {
-    text-decoration: none;
+	text-decoration: none;
 }
+
 .entry-tags {
 	display: block;
-    margin-top: 1rem;
+	margin-top: 1rem;
 	width: 70%;
-    float: left;
-    text-align: left;
+	float: left;
+	text-align: left;
 }
+
 .social-share {
 	display: block;
-    margin-top: 1rem;
-    width: 30%;
-    float: right;
-    text-align: right;
+	margin-top: 1rem;
+	width: 30%;
+	float: right;
+	text-align: right;
 }
+
 .feature {
-    @include transition(.5s);
-    @media #{$small} {
-        background-image: none !important;
-    }
-    @media #{$medium} {
-        color: white;
-        padding: 4em;
-        margin-left: -4rem;
-        margin-right: -4rem;
-        margin-top: -2rem;
-        border-radius: 3px 3px 0 0;
-        background-color: rgba($black, 0.6);
-        background-blend-mode: multiply;
-        background-position: center center;
-    }
-    @media #{$notsmall} {
-        color: white;
-        padding: 10em;
-        margin-left: -4rem;
-        margin-right: -4rem;
-        margin-top: -2rem;
-        border-radius: 3px 3px 0 0;
-        background-color: rgba($black, 0.6);
-        background-blend-mode: multiply;
-        background-position: center center;
-    }
+	@include transition(.5s);
+
+	@media #{$small} {
+		background-image: none !important;
+	}
+
+	@media #{$medium} {
+		color: white;
+		padding: 4em;
+		margin-left: -4rem;
+		margin-right: -4rem;
+		margin-top: -2rem;
+		border-radius: 3px 3px 0 0;
+		background-color: rgba($black, 0.6);
+		background-blend-mode: multiply;
+		background-position: center center;
+	}
+
+	@media #{$notsmall} {
+		color: white;
+		padding: 10em;
+		margin-left: -4rem;
+		margin-right: -4rem;
+		margin-top: -2rem;
+		border-radius: 3px 3px 0 0;
+		background-color: rgba($black, 0.6);
+		background-blend-mode: multiply;
+		background-position: center center;
+	}
 }
