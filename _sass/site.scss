@@ -33,12 +33,13 @@ body {
 
 	@media #{$large} {
 		background-image: none !important;
-		background: $comp-color;
+		background: #202020;
 	}
 
 	@media #{$xlarge} {
 		background-image: none !important;
-		background: $comp-color;
+		background-color: #202020;
+		;
 	}
 }
 
