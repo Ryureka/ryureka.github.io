@@ -13,6 +13,8 @@ html {
 }
 
 body {
+	position: absolute;
+	display: table;
 	@extend %extend1;
 	font-family: $font1;
 	@include font-rem($doc-font-size);
@@ -26,21 +28,20 @@ body {
 		background: $white;
 	}
 
-	@media #{$medium} {
-		background-image: none !important;
-		background: $white;
-	}
+	// @media #{$medium} {
+	// 	background-image: none !important;
+	// 	background: $white;
+	// }
 
-	@media #{$large} {
-		background-image: none !important;
-		background: #202020;
-	}
+	// @media #{$large} {
+	// 	background-image: none !important;
+	// 	background: #202020;
+	// }
 
-	@media #{$xlarge} {
-		background-image: none !important;
-		background-color: #202020;
-		;
-	}
+	// @media #{$xlarge} {
+	// 	background-image: none !important;
+	// 	background-color: #202020;
+	// }
 }
 
 * {
@@ -56,6 +57,7 @@ body {
 }
 
 .header {
+	display: table;
 	height: 100%;
 	position: relative;
 	width: 100%;
