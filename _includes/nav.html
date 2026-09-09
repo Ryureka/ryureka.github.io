@@ -24,8 +24,8 @@
 							class="fa fa-fw fa-facebook-square"></i> Facebook</a>
 				</li>{% endif %}
 				{% if site.google.plus %}<li>
-					<a href="http://plus.google.com/+{{ site.google.plus }}" target="_blank"
-						rel="noopener noreferrer"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>
+					<a href="http://plus.google.com/+{{ site.google.plus }}" target="_blank" rel="noopener noreferrer"><i
+							class="fa fa-fw fa-google-plus-square"></i> Google+</a>
 				</li>{% endif %}
 				{% if site.linkedin %}<li>
 					<a href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener noreferrer"><i
@@ -48,8 +48,8 @@
 							class="fa fa-fw fa-github"></i> Github</a>
 				</li>{% endif %}
 				{% if site.stackoverflow %}<li>
-					<a href="http://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank"
-						rel="noopener noreferrer"><i class="fa fa-fw fa-stack-overflow"></i> StackOverflow</a>
+					<a href="http://stackoverflow.com/users/{{ site.stackoverflow }}" target="_blank" rel="noopener noreferrer"><i
+							class="fa fa-fw fa-stack-overflow"></i> StackOverflow</a>
 				</li>{% endif %}
 				{% if site.lastfm %}<li>
 					<a href="http://lastfm.com/user/{{ site.lastfm }}" target="_blank" rel="noopener noreferrer"><i
@@ -76,8 +76,8 @@
 							class="fa fa-fw fa-youtube-square"></i> Youtube</a>
 				</li>{% endif %}
 				{% if site.youtube-channel %}<li>
-					<a href="https://youtube.com/channel/{{ site.youtube-channel }}" target="_blank"
-						rel="noopener noreferrer"><i class="fa fa-fw fa-youtube"></i> Youtube</a>
+					<a href="https://youtube.com/channel/{{ site.youtube-channel }}" target="_blank" rel="noopener noreferrer"><i
+							class="fa fa-fw fa-youtube"></i> Youtube</a>
 				</li>{% endif %}
 				{% if site.soundcloud %}<li>
 					<a href="http://soundcloud.com/{{ site.soundcloud }}" target="_blank" rel="noopener noreferrer"><i
@@ -115,8 +115,8 @@
 		{% else %}
 		{% assign domain = site.url %}
 		{% endif %}
-		<li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"
-				rel="noopener noreferrer" {% endif %}>{{ link.title }}</a></li>
+		<li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"
+				{% endif %}>{{ link.title }}</a></li>
 		{% endfor %}
 		<li>
 			<a href="#">Posts</a>
@@ -135,8 +135,9 @@
 				<li><a href="{{ site.url }}/problemsolving/">ProblemSolving</a></li>
 				<li><a href="{{ site.url }}/problemsolving/boj/">BOJ</a></li>
 				<li><a href="{{ site.url }}/problemsolving/programmers/">Programmers</a></li>
-				<li><a href="{{ site.url }}/problemsolving/swea/">SWEA</a></li>
 				<li><a href="{{ site.url }}/problemsolving/leetcode/">LeetCode</a></li>
+				<li><a href="{{ site.url }}/problemsolving/codetree/">Codetree</a></li>
+				<li><a href="{{ site.url }}/problemsolving/swea/">SWEA</a></li>
 			</ul>
 		</li>
 		<li>
