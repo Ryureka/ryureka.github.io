@@ -7,7 +7,7 @@ category: Codetree
 problemsolving: true
 posts: true
 tag:
-- 완전탐색
+- 자리 수 단위로 완전탐색
 comments: true
 ---
 * TOC
